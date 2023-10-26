@@ -108,9 +108,8 @@
 
 ```mermaid
 flowchart TD;
-    A[untracked / unstaged] -->|git add | B(tracked / unstaged) --> |Modified?|F;
-    B --> C{commit};
-    C --> E[tracked];
+    A[untracked / unstaged] -->|git add | B(tracked / staged) --> |Modified?|F;
+    B --> |git commit -m 'комментарий'|C{tracked};
     C -->|Modified?| F[modified/tracked];
 ```
 
