@@ -106,7 +106,6 @@
 - HEAD - указатель на самый последний коммит
 - статусы бывают следующие : untracked, tracked, staged, modified
 
-
 '''mermaid
 flowchart TD;
     A[untracked / unstaged] -->|git add | B(tracked / unstaged) --> |Modified?|F;
@@ -114,5 +113,4 @@ flowchart TD;
     C --> E[tracked];
     C -->|Modified?| F[modified/tracked];
 '''
-
 
