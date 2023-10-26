@@ -108,11 +108,11 @@
 
 
 '''mermaid
-flowchart TD
-    A[untracked / unstaged] -->|git add | B(tracked / unstaged) --> |Modified?|F
-    B --> C{commit}
-    C --> E[tracked]
-    C -->|Modified?| F[modified/tracked]
+flowchart TD;
+    A[untracked / unstaged] -->|git add | B(tracked / unstaged) --> |Modified?|F;
+    B --> C{commit};
+    C --> E[tracked];
+    C -->|Modified?| F[modified/tracked];
 '''
 
 
